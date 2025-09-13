@@ -11,7 +11,7 @@ dotenv.config()
 
 const app = express()
 app.use(cors({
-  origin: ["http://localhost:5173"],
+  origin: ["http://localhost:5173", "https://personal-finance-tracker-five-peach.vercel.app"],
   credentials: true
 }));
 app.use(express.json({ limit: "2mb" }))
